@@ -2,7 +2,9 @@ import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
     
-    container: {
+    container:{
+      width:'300',
+      height:'100%',
       flex: 1,
       backgroundColor: '#03999e',
       alignItems: 'center',
@@ -11,15 +13,26 @@ const styles = StyleSheet.create({
     logo:{
       width:'100%',
       height:'20%',
-      borderRadius:20
+      borderRadius:20,
+      marginTop:1,
+      position:'absolute',
+      top:0,
+      left:0,
+      right:0,
+      bottom:0,
+    
     },
     input:{
       width:'100%',
-      height:40,
-      backgroundColor:'#fff',
-      borderRadius:50,
-      padding:10,
-      marginBottom:10
+      color:'white',
+      padding:5,
+      marginBottom:5,
+      marginTop: 5,
+      borderBottomColor: "#ddd",
+      borderBottomWidth: 2,
+      paddingBottom: 10,
+      fontWeight: "bold",
+      
     },
     btnCadastro:{
       width:100,
@@ -29,37 +42,18 @@ const styles = StyleSheet.create({
       justifyContent: 'center',
       alignItems: 'center',
       marginBottom:10
-    },
-    textao:{
-      
-      backgroundColor:'#fff',
-      textAlign:'center',
-      marginBottom:30
     }, 
-    textao2:{
-      backgroundColor:'steelblue',
-      fontSize:50,
-      textAlign:'center',
-      marginBottom:15,
-      color:'#fff'
-    },
-    textao3:{
-      backgroundColor:'steelblue',
-      fontSize:20,
-      textAlign:'center',
-      marginBottom:15,
-      color:'#fff'
-    },
-    btnLogar:{
-      fontSize:10,
-    },
     containerbtn:{
       flexDirection:'row',
       width:'100%',
       alignSelf:'flex-end',
-      borderTopWidth:2,
-      borderBottomWidth:2,
+      borderTopWidth:3,
+      borderBottomWidth:1,
       borderColor:'#333',
+      position: 'fixed',
+      bottom:0,
+      backgroundColor:'#03999e',
+      justifyContent:'center',
     },
     btnMenu:{
       marginHorizontal:10,
@@ -71,7 +65,7 @@ const styles = StyleSheet.create({
       alignItems:'center',
       borderRightWidth:2,
       borderColor:'#333',
-      backgroundColor:'#fff',
+      backgroundColor:'#03999e',
     },
     iconlogin:{
       height:40,
